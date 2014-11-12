@@ -10,8 +10,11 @@ var express = require('express'),
   morgan = require('morgan'),
   routes = require('./routes'),
   api = require('./routes/api'),
+  connect = require('connect'),
   http = require('http'),
-  path = require('path');
+  app = connect(),
+  path = require('path')
+
 
 var app = module.exports = express();
 
